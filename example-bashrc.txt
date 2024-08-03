@@ -1,0 +1,18 @@
+# User specific aliases and functions
+if [ -z "$TMUX" ]; then
+    tmux attach -t TM || tmux new -s TM
+fi
+
+if [ "$TERM" == 'xterm' ]; then
+  tmux rename-window $HOSTNAME
+fi
+
+alias ixp-bird-rs1="tmux rename-window 'ixp-bird-rs1'; ssh admin@clab-ceos-ixp-bird-rs1 | tee log/ixp-bird-rs1_\$(date +%Y-%m-%d_%H:%M:%S).log"
+alias ixp-ceos-isp1="tmux rename-window 'ixp-ceos-isp1'; ssh admin@clab-ceos-ixp-ceos-isp1 | tee log/ixp-ceos-isp1_\$(date +%Y-%m-%d_%H:%M:%S).log"        
+alias ixp-ceos-ixp-sw1="tmux rename-window 'ixp-ceos-ixp-sw1'; ssh admin@clab-ceos-ixp-ceos-ixp-sw1 | tee log/ixp-ceos-ixp-sw1_\$(date +%Y-%m-%d_%H:%M:%S).log"
+alias ixp-ceos-peer3="tmux rename-window 'ixp-ceos-peer3'; ssh admin@clab-ceos-ixp-ceos-peer3 | tee log/ixp-ceos-peer3_\$(date +%Y-%m-%d_%H:%M:%S).log"    
+alias ixp-serv-ansible="tmux rename-window 'ixp-serv-ansible'; ssh ansible@clab-ceos-ixp-serv-ansible | tee log/ixp-serv-ansible_\$(date +%Y-%m-%d_%H:%M:%S).log"
+alias ixp-ubu-host1="tmux rename-window 'ixp-ubu-host1'; ssh admin@clab-ceos-ixp-ubu-host1 | tee log/ixp-ubu-host1_\$(date +%Y-%m-%d_%H:%M:%S).log"        
+alias ixp-bird-rs2="tmux rename-window 'ixp-bird-rs2'; ssh admin@clab-ceos-ixp-bird-rs2 | tee log/ixp-bird-rs2_\$(date +%Y-%m-%d_%H:%M:%S).log"
+alias ixp-ceos-peer1="tmux rename-window 'ixp-ceos-peer1'; ssh admin@clab-ceos-ixp-ceos-peer1 | tee log/ixp-ceos-peer1_\$(date +%Y-%m-%d_%H:%M:%S).log"    
+alias ixp-ceos-peer2="tmux rename-window 'ixp-ceos-peer2'; ssh admin@clab-ceos-ixp-ceos-peer2 | tee log/ixp-ceos-peer2_\$(date +%Y-%m-%d_%H:%M:%S).log"
