@@ -9,7 +9,7 @@ if [ -z "$TMUX" ]; then
     tmux attach -t TM || tmux new -s TM
 fi 
 
-if [ "$TERM" == 'xterm' ]; then
+if [ "$TMUX" ]; then
   tmux rename-window $HOSTNAME
 fi
 """
