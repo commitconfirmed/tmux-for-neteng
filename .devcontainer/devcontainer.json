@@ -10,9 +10,14 @@
             }
         },
             "extensions": [
-                "ms-vscode.cpptools",
                 "ms-azuretools.vscode-docker"
             ]
     },
-    "postCreateCommand": "echo 'Development container is ready!'"
+    "mounts": [
+        "source=${localWorkspaceFolder}/example-bashrc.txt,target=/root/.bashrc,type=bind",
+    ],
+    "postCreateCommand": [ 
+        "uname -a",
+        "echo 'Development container is ready!'"
+    ]
 }
