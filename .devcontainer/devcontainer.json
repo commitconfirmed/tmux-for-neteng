@@ -1,6 +1,8 @@
 {
     "name": "TMUX For Network Engineers example",
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
     "customizations": {
         "vscode": {
             "settings": {
