@@ -1,5 +1,5 @@
 {
-    "name": "Dev Container",
+    "name": "TMUX For Network Engineers example",
     "build": {
         "dockerfile": "Dockerfile"
     },
@@ -10,14 +10,14 @@
             }
         },
             "extensions": [
-                "ms-azuretools.vscode-docker"
+                "ms-azuretools.vscode-docker",
+                "vscode.git"
             ]
     },
-    "mounts": [
-        "source=${localWorkspaceFolder}/example-bashrc.txt,target=/root/.bashrc,type=bind",
-    ],
     "postCreateCommand": [ 
-        "uname -a",
-        "echo 'Development container is ready!'"
+        "mkdir log",
+        "cat example-bashrc.txt >> ~/.bashrc",
+        "cp .tmux.conf ~/.tmux.conf",
+        "source ~/.bashrc"
     ]
 }
