@@ -1,10 +1,5 @@
 username,alias,host
-admin,ixp-bird-rs1,clab-ceos-ixp-bird-rs1
-admin,ixp-ceos-isp1,clab-ceos-ixp-ceos-isp1
-admin,ixp-ceos-ixp-sw1,clab-ceos-ixp-ceos-ixp-sw1
-admin,ixp-ceos-peer3,clab-ceos-ixp-ceos-peer3
-ansible,ixp-serv-ansible,clab-ceos-ixp-serv-ansible
-admin,ixp-ubu-host1,clab-ceos-ixp-ubu-host1
-admin,ixp-bird-rs2,clab-ceos-ixp-bird-rs2
-admin,ixp-ceos-peer1,clab-ceos-ixp-ceos-peer1
-admin,ixp-ceos-peer2,clab-ceos-ixp-ceos-peer2
+admin,test-router1,clab-test-router1
+admin,test-router2-isp1,clab-test-router2
+ansible,test-ansible,clab-test-ansible
+

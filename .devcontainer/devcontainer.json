@@ -1,0 +1,18 @@
+{
+    "name": "Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            }
+        },
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-azuretools.vscode-docker"
+            ]
+    },
+    "postCreateCommand": "echo 'Development container is ready!'"
+}

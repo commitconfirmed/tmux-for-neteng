@@ -1,8 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import csv
 
 def main():
-    print("Paste the below into the bottom of your .bashrc file \n--------------------")
+    print("Paste the below lines into the bottom of your .bashrc file \n--------------------")
     header = """ 
 # User specific aliases and functions
 if [ -z "$TMUX" ]; then
@@ -18,7 +18,13 @@ fi
     with open('hosts.csv', 'r') as csvfile:
         lines = csv.DictReader(csvfile)
         for line in lines:
-            print("alias " + line["alias"] + "=\"tmux rename-window '" + line["alias"] + "'; ssh " + line["username"] + "@" + line["host"] + " | tee log/" + line["alias"] + "_\\$(date +%Y-%m-%d_%H:%M:%S).log\"") 
+            print("alias " + 
+                  line["alias"] + "=\"tmux rename-window '" + 
+                  line["alias"] + "'; ssh " + 
+                  line["username"] + "@" + 
+                  line["host"] + " | tee log/" + 
+                  line["alias"] + "_\\$(date +%Y-%m-%d_%H-%M-%S).log\""
+            ) 
          
 if __name__ == "__main__":
     main()
