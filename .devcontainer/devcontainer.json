@@ -14,10 +14,5 @@
                 "vscode.git"
             ]
     },
-    "postCreateCommand": [ 
-        "mkdir log",
-        "cat example-bashrc.txt >> ~/.bashrc",
-        "cp .tmux.conf ~/.tmux.conf",
-        "source ~/.bashrc"
-    ]
+    "postCreateCommand": "mkdir log && cat example-bashrc.txt >> ~/.bashrc && cp .tmux.conf ~/.tmux.conf && source ~/.bashrc"
 }

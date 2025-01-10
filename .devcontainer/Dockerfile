@@ -7,8 +7,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 USER root
 WORKDIR /root
 
-# Some standard Ubuntu packages for troubleshooting and a SSH server
+# Some standard ubuntu packages
 RUN apt-get update -y && apt-get install -y \
 tmux \
 vim \
+git \
 && rm -rf /var/lib/apt/lists/*
