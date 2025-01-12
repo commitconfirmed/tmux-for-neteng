@@ -1,12 +1,14 @@
 # tmux-for-neteng
 Example tmux configuration designed for Network Engineers
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/commitconfirmed/tmux-for-neteng?quickstart=1&devcontainer_path=.devcontainer%2Fdevcontainer.json)
+
 - [Why use TMUX?](#why-use-tmux)
 - [Try it out](#try-it-out)
 - [Installation](#installation)
 - [Usage](#usage)
 
-Special shoutout to https://leanpub.com/the-tao-of-tmux/read which was a major help in building this configuration. A great resource if you want to learn everything there is to know about tmux and want to build your own configuration.
+Special shoutout to https://tao-of-tmux.readthedocs.io/en/latest/index.html which was a major help in building this configuration. A great resource if you want to learn everything there is to know about tmux and want to build your own configuration.
 
 ## Why use TMUX?
 
@@ -22,13 +24,13 @@ Special shoutout to https://leanpub.com/the-tao-of-tmux/read which was a major h
 
 ## Try it out
 
-The below button will spin up a basic ubuntu codespaces image with tmux installed with this config if you want to give it a spin. The few aliases defined (i.e. test-router1) won't actually work due to no SSH but you will see the window name change and a log file created.
+Just click the "Open in GitHub Codespaces" button up the top if you want to give this a spin!
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/commitconfirmed/tmux-for-neteng?quickstart=1&devcontainer_path=.devcontainer%2Fdevcontainer.json)
+The few aliases defined (i.e. test-router1) won't actually work due to no SSH but you will see the window name change and a log file created.
 
 ## Installation
 
-Pretty much every modern linux distribution these days has tmux installed by default. If not simply install tmux using your distributions package manager.
+Pretty much every modern linux distribution these days should have tmux installed by default. If not simply install tmux using your distributions package manager.
 
 To use this tmux configuration, simply copy and paste the contents of the [.tmux.conf](.tmux.conf) file into your home directories `~/.tmux.conf`
 
@@ -51,7 +53,7 @@ Keybindings I've used as a personal preference, you can change this if you want 
 | `Ctrl+Space + 1-9` | Switch to window # |
 | `Ctrl+Space + [` | Switch to scrollback mode, can use VIM bindings here to search, etc. Press Enter twice to exit |
 | `Ctrl+Space + -` | Create a Horizontal Split |
-| `Ctrl+Space + =` | Create a Vertial Split |
+| `Ctrl+Space + =` | Create a Vertical Split |
 | `Alt+Arrow Keys` | Navigate between Split Panes |
 | `Ctrl+Space + d` | Detach TMUX |
 | `Ctrl+Space + r` | Reload TMUX config |

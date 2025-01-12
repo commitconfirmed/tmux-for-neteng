@@ -10,9 +10,9 @@
             }
         },
             "extensions": [
-                "vscode.docker",
+                "ms-azuretools.vscode-docker",
                 "vscode.git"
             ]
     },
-    "postCreateCommand": "mkdir log && cat example-bashrc.txt >> ~/.bashrc && cp .tmux.conf ~/.tmux.conf && source ~/.bashrc"
+    "postCreateCommand": "mkdir -p log && cat example-bashrc.txt >> ~/.bashrc && cp .tmux.conf ~/.tmux.conf && source ~/.bashrc"
 }

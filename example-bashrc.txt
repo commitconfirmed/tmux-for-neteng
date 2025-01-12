@@ -1,6 +1,6 @@
 # User specific aliases and functions
 if [ -z "$TMUX" ]; then
-    tmux attach -t TM || tmux new -s TM
+    tmux attach -t COMMITCONFIRMED || tmux new -s COMMITCONFIRMED
 fi
 
 if [ "$TMUX" ]; then
